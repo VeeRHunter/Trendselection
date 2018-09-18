@@ -1,0 +1,45 @@
+page-footer {
+
+    ion-footer{        
+        height: 40px;
+        display: inline-block;
+        vertical-align: top;
+        color: #fff;
+        background: #565d97;
+    }
+
+    .tech_row{
+        height: 100%;
+    }
+
+    .tech_row span{
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .tend_row{
+        height: 100%;
+        text-align: right;
+        margin-left: auto;
+    }
+
+    .google_tend{
+        cursor: pointer;
+    }
+
+    .google_twitter{
+        float: right;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        border-left: 1px solid #ddd;
+        padding-left: 10px;
+    }
+    
+    .twitter_span{
+        margin-left: 10px;
+        cursor: pointer;
+    }
+}

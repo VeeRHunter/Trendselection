@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-row class="header_row">
+    <ion-col col-1>
+      <ion-row class="full_height">
+        <img class="refresh_icon" src="assets/imgs/Refresh_icon.png" (click)="refresh()" />
+      </ion-row>
+    </ion-col>
+    <ion-col col-4>
+      <ion-row class="full_height">
+        <ion-select class="date_select" (ionChange)="select_date()" [(ngModel)]="date_index">
+          <ion-option [value]="list" *ngFor="let list of dateList; let i = index">{{list}}</ion-option>
+        </ion-select>
+      </ion-row>
+    </ion-col>
+
+    <ion-col col-4>
+      <ion-row class="full_height">
+        <ion-select class="date_select" (ionChange)="select_social()" [(ngModel)]="social_index">
+          <ion-option value="youtube">Youtube</ion-option>
+          <ion-option value="twitter">Twitter</ion-option>
+          <!-- <ion-option value="news">News</ion-option> -->
+        </ion-select>
+      </ion-row>
+    </ion-col>
+
+    <ion-col col-3>
+      <ion-row class="full_height">
+        <span class="trend_span">
+          iAPElections Trends
+        </span>
+      </ion-row>
+    </ion-col>
+
+  </ion-row>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-row class="man_photo_row">
+    <ion-slides scrollX="true" slidesPerView=5 class="photo_scroll">
+      <ion-slide class="photo_span" *ngFor="let list of person_image; let i = index;">
+        <ion-row>
+          <img [ngClass]="{'photo_img':list.selected, 'non_borderImg':list.unselect, 'avail_img':list.avail}" (click)="click_photo(i)"
+            src="{{list.image}}" />
+        </ion-row>
+        <ion-row>
+          <span class="text_center" [ngClass]="{'name_select':list.selected, 'name_avail':list.avail, 'name_none':list.unselect}">
+            {{list.name}}
+          </span>
+        </ion-row>
+        <ion-row class="flag_row">
+          <img class="flag_img_class" src="{{list.flag_image}}" [ngClass]="{'topic_select':list.selected, 'topic_avail':list.avail, 'topic_unselect':list.unselect}" />
+        </ion-row>
+      </ion-slide>
+    </ion-slides>
+  </ion-row>
+
+  <ion-row class="graph_row">
+    <ion-row class="each_graph_row" *ngFor="let list of topic_List; let i = index">
+      <ion-col col-10 [ngClass]="{'first_row':i % 2 == 0, 'second_row':i % 2 == 1}">
+        <ion-row class="full_height">
+          <ion-row class="detail_row" [ngStyle]="{'width': list.width}">
+          </ion-row>
+        </ion-row>
+        <ion-row class="person_name">
+          <span class="name_left" [ngStyle]="{'width': list.width}" *ngIf="list.value >= 45" (click)="goto_detail(i)">{{list.name}}</span>
+          <span class="blank_span" [ngStyle]="{'width': list.width}" *ngIf="list.value < 45"></span>
+          <span class="name_right" [ngStyle]="{'width': list.name_width}" *ngIf="list.value < 45" (click)="goto_detail(i)">{{list.name}}</span>
+        </ion-row>
+      </ion-col>
+      <ion-col col-2 class="col_center" [ngClass]="{'spec_back':i % 2 == 0, 'second_row':i % 2 == 1}">
+        <ion-row (click)="goto_detail(i)" class="topic_spanImage">
+          <img src="{{list.topic_image}}" class="topic_image" />
+        </ion-row>
+        <ion-icon name="ios-arrow-forward" class="right_arrow" (click)="goto_detail(i)"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+  </ion-row>
+
+</ion-content>
+
+<page-footer></page-footer>
