@@ -1,40 +1,26 @@
 page-home {
-
-    ion-header.header-md{
+    ion-header.header-md {
         width: 100%;
         height: 50px;
         background: #9fa2bd;
         display: inline-block;
         vertical-align: top;
     }
-
-    .full_height{
+    .full_height {
         height: 100%;
     }
-
-    .header_row{
+    .header_row {
         height: 100%;
     }
-
-    .header-ios .header_row{
-        margin-top: 10px;
+    .content-ios .man_photo_row {
+        // margin-top: 20px;
     }
-    .header-ios{
-        height: 70px;
-        background: #9fa2bd;
-    }
-
-    .content-ios .man_photo_row{
-        margin-top: 20px;
-    }
-
-    .header_row span{
+    .header_row span {
         margin: auto;
         cursor: pointer;
         text-align: center;
     }
-
-    .date_select{
+    .date_select {
         margin: auto !important;
         background-color: white !important;
         padding-bottom: 0px !important;
@@ -47,37 +33,30 @@ page-home {
         border-radius: 2px !important;
         height: 4vh !important;
         padding-top: 1vh !important;
-        font-size: 2vh;
+        font-size: 3.5vw;
     }
-    
-    .trend_span{
+    .trend_span {
         color: white;
-        font-size: 2vh;
+        font-size: 3.5vw;
     }
-
-    .photo_scroll{
+    .photo_scroll {
         width: 100%;
         height: 100%;
     }
-
-    .photo_span{
+    .photo_span {
         position: relative;
     }
-
-    .photo_img{
-        
+    .photo_img {
         max-height: 15vw;
         min-height: 15vw;
-        max-width:15vw;
+        max-width: 15vw;
         min-width: 15vw;
-
         border-radius: 50%;
         border: 2px solid white;
         transition-timing-function: ease-in-out;
         margin: auto;
     }
-
-    .unselect{
+    .unselect {
         width: 50px;
         height: 50px;
         border-radius: 50px;
@@ -87,156 +66,126 @@ page-home {
         left: 1px;
         top: -1px;
     }
-    
-    .non_borderImg{
-        
+    .non_borderImg {
         max-height: 15vw;
         min-height: 15vw;
-        max-width:15vw;
+        max-width: 15vw;
         min-width: 15vw;
-
         border-radius: 50%;
         opacity: 0.2;
         transition-timing-function: ease-in-out;
         margin: auto;
     }
-
-    .avail_img{  
-        
+    .avail_img {
         max-height: 15vw;
         min-height: 15vw;
-        max-width:15vw;
+        max-width: 15vw;
         min-width: 15vw;
-
         border-radius: 50%;
         opacity: 0.7;
         transition-timing-function: ease-in-out;
         margin: auto;
     }
-
-    .graph_row{
+    .graph_row {
         margin-top: 10%;
         margin-left: -5px;
         margin-bottom: 35%;
         position: relative;
     }
-
-    .each_graph_row{
-        height: 9vh;
+    .each_graph_row {
+        height: 7vh;
     }
-
-    .first_row{
+    .first_row {
         background-color: #7f83a7;
         position: relative;
     }
-
-    .second_row{
+    .second_row {
         background-color: #71749c;
         position: relative;
     }
-
-    .text_center{
+    .text_center {
         text-align: center;
         margin: auto;
         padding-top: 1.8vh;
-        font-size: 1.8vh;
+        font-size: 3.5vw;
     }
-
-    .name_row{
+    .name_row {
         position: absolute;
         top: 34%;
         left: 0;
     }
-
-    .name_row span{
+    .name_row span {
         font-size: 1.6rem;
         color: white;
     }
-
-    .topic_image{
+    .topic_image {
         // width: 20px;
         // height: 20px;
         // border-radius: 20px;
-        
         max-height: 3.6vh;
         min-height: 3.6vh;
-        max-width:3.6vh;
+        max-width: 3.6vh;
         min-width: 3.6vh;
-
         border-radius: 50%;
         margin: auto;
     }
-
-    .topic_select{
+    .topic_select {
         opacity: 1;
     }
-
-    .topic_unselect{
+    .topic_unselect {
         opacity: 0.2;
     }
-
-    .topic_avail{
+    .topic_avail {
         opacity: 0.7;
     }
-
-    .right_arrow{
+    .right_arrow {
         color: white;
-        margin-right: -15px;
+        margin-right: -10px;
         float: right;
-        font-size: 2.7vh;
+        font-size: 2.7vw;
     }
-
-    .col_center{
+    .col_center {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
-    .col_center span{
-        width: 30; 
+    .col_center span {
+        width: 30;
         height: 30px;
         border-radius: 30px;
         background: white;
         z-index: 10;
     }
-
-    .col_center ion-row{
+    .col_center ion-row {
         z-index: 10;
     }
-
-    .spec_back{
+    .spec_back {
         background: linear-gradient(to right, #7f83a7 0%, #71749c 100%);
     }
-
-    .graph_row ion-col{
+    .graph_row ion-col {
         padding: 0px;
     }
-
-    .vertical_line{
+    .vertical_line {
         position: absolute;
         height: 100%;
     }
-
-    .vertical_line ion-col{
+    .vertical_line ion-col {
         height: 100%;
     }
-
-    .each_vertical{
+    .each_vertical {
         border-left: 1px dashed rgba(255, 255, 255, 0.2);
         height: 100%;
         width: 10%;
         float: left;
     }
-
-    .each_vertical_right{
+    .each_vertical_right {
         border-left: 1px dashed rgba(255, 255, 255, 0.2);
         border-right: 1px dashed rgba(255, 255, 255, 0.2);
         height: 100%;
         width: 10%;
         float: left;
     }
-
-    .detail_first_row{
+    .detail_first_row {
         background-color: #e58a22;
         margin-top: auto;
         margin-bottom: auto;
@@ -247,12 +196,11 @@ page-home {
         transition-duration: 0.6s;
         transition-timing-function: ease-in-out;
     }
-
-    .detail_row{
+    .detail_row {
         background-color: #e58a22;
         margin-top: auto;
         margin-bottom: auto;
-        height: 5.4vh;
+        height: 4vh;
         opacity: 1;
         position: relative;
         z-index: 5;
@@ -260,14 +208,11 @@ page-home {
         transition-timing-function: ease-in-out;
         border-radius: 2.7vh;
     }
-
-    .background_image{
-
+    .background_image {
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
     }
-
-    .detail_second_row{
+    .detail_second_row {
         background-color: #e58000;
         margin-top: auto;
         margin-bottom: auto;
@@ -278,13 +223,15 @@ page-home {
         transition-duration: 0.6s;
         transition-timing-function: ease-in-out;
     }
-
     @keyframes example {
-        0%   { width: 0%}
-        100% { width: 100%}
+        0% {
+            width: 0%
+        }
+        100% {
+            width: 100%
+        }
     }
-
-    .circle_span{
+    .circle_span {
         width: 13px;
         height: 13px;
         border-radius: 13px;
@@ -295,8 +242,7 @@ page-home {
         margin-left: auto;
         margin-right: -5px;
     }
-
-    .each_number_row{
+    .each_number_row {
         float: left;
         width: 10%;
         color: #d7d8e3;
@@ -305,8 +251,7 @@ page-home {
         text-indent: -6px;
         position: relative;
     }
-
-    .zero_number{
+    .zero_number {
         float: left;
         width: 10%;
         color: #d7d8e3;
@@ -314,42 +259,36 @@ page-home {
         text-align: left;
         text-indent: -3px;
     }
-
-    .end_number{
+    .end_number {
         float: right;
         text-align: right;
     }
-
-    .each_number_row .end_number{
+    .each_number_row .end_number {
         position: absolute;
         width: 100%;
         text-align: right;
     }
-
-    .name_none{
+    .name_none {
         color: white;
         margin-top: -5px;
         opacity: 0.2;
         text-align: center;
         width: 100%;
     }
-
-    .name_select{
+    .name_select {
         color: white;
         margin-top: -5px;
         text-align: center;
         width: 100%;
     }
-
-    .name_avail{
+    .name_avail {
         color: white;
         margin-top: -5px;
         opacity: 0.6;
         text-align: center;
         width: 100%;
     }
-
-    .topic_left{
+    .topic_left {
         float: left;
         text-align: right;
         margin-top: auto;
@@ -359,91 +298,79 @@ page-home {
         font-size: 1.6rem;
         color: white;
     }
-
-    .topic_right{
+    .topic_right {
         float: right;
         text-align: left;
         margin-top: auto;
         margin-bottom: auto;
         margin-right: auto;
     }
-
-    .name_left{
+    .name_left {
         float: left;
-        padding-right: 5vw;   
+        padding-right: 5vw;
         text-align: right;
     }
-
-    .blank_span{
+    .blank_span {
         height: 25px;
         float: left;
     }
-
-    .name_right{
+    .name_right {
         float: right;
         margin-right: auto;
-        padding-left: 5vw;  
+        padding-left: 5vw;
     }
-
-    .person_name{
+    .person_name {
         position: absolute;
-        top: 2.7vh;
+        top: 0;
+        height: 100%;
     }
-    .person_name span{
-        font-size: 2.7vh;
+    .person_name span {
+        font-size: 4vw;
+        margin-top: auto;
+        margin-bottom: auto;
         color: white;
         z-index: 8;
     }
-
-    .circle_row{
+    .circle_row {
         position: absolute;
     }
-
-    .flag_row{
+    .flag_row {
         position: absolute;
         width: 100%;
         top: 0px;
         right: 4%;
     }
-
-    .flag_img_class{
+    .flag_img_class {
         // width: 18px;
         // height: 18px;
         // border-radius: 18px;
-        
         max-height: 5vw;
         min-height: 5vw;
-        max-width:5vw;
+        max-width: 5vw;
         min-width: 5vw;
-
         border-radius: 50%;
         left: 100%;
         margin-left: auto;
     }
-
-    .refresh_button{
+    .refresh_button {
         height: 30px;
         margin-bottom: 10%;
         margin-top: -5%;
         margin-left: -5%;
     }
-
-    .topic_spanImage{
+    .topic_spanImage {
         // width: 40px;
         // height: 40px;
         // border-radius: 40px;
-
-        max-height: 7.2vh;
-        min-height: 7.2vh;
-        max-width:7.2vh;
-        min-width: 7.2vh;
-
+        max-height: 6vh;
+        min-height: 6vh;
+        max-width: 6vh;
+        min-width: 6vh;
         border-radius: 50%;
         background-color: white;
         margin: auto;
     }
-
-    .refresh_icon{
+    .refresh_icon {
         width: 4vh;
         margin: auto;
     }

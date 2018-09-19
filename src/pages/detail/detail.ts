@@ -99,8 +99,6 @@ export class DetailPage {
       this.topic_imageList.push(keys);
     }
 
-    console.log(this.topic_imageList);
-
     for (let list of this.topic_imageList) {
 
       let array_sam = list.split("_");
@@ -123,12 +121,6 @@ export class DetailPage {
 
     let set_topicOrder = new Array();
 
-    console.log(this.totalFullData);
-    console.log(this.social_index);
-    console.log(this.date_index);
-    console.log(this.topic_index);
-    console.log(this.totalFullData[this.social_index][this.date_index]);
-
     for (let list of this.totalFullData[this.social_index][this.date_index][this.topic_imageList[this.topic_index]]["keywords-data"]) {
 
       let sam_width = list.value;
@@ -149,11 +141,8 @@ export class DetailPage {
       }
       this.person_total.push(sam);
     }
-    console.log(this.person_total);
-    console.log("here");
 
     this.bubbleSort(set_topicOrder, this.person_total);
-    console.log(this.person_total);
 
   }
 

@@ -12,15 +12,8 @@ page-detail {
     .header_row {
         height: 100%;
     }
-    .header-ios .header_row {
-        margin-top: 10px;
-    }
-    .header-ios {
-        height: 70px;
-        background: #9fa2bd;
-    }
     .content-ios .man_photo_row {
-        margin-top: 20px;
+        // margin-top: 20px;
     }
     .topic_content {
         // width: 50px;
@@ -65,26 +58,59 @@ page-detail {
         min-width: 10vw;
         border-radius: 50%;
         opacity: 0.5;
+    } // .name_select {
+    //     color: white;
+    //     width: 100%;
+    //     text-align: center;
+    //     margin: auto;
+    //     padding-top: 5%;
+    //     font-size: 3.5vw;
+    //     padding-left: 3px;
+    //     padding-right: 3px;
+    // }
+    .text_center {
+        text-align: center;
+        margin: auto;
+        padding-top: 1.8vh;
+        font-size: 3.5vw;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .name_none {
+        color: white;
+        margin-top: 5px;
+        opacity: 0.2;
+        text-align: center;
+        width: 100%;
     }
     .name_select {
         color: white;
-        width: 100%;
+        margin-top: 5px;
         text-align: center;
-        margin: auto;
-        padding-top: 5%;
-        font-size: 1.8vh;
+        width: 100%;
     }
-    .detail_row{
+    .name_avail {
+        color: white;
+        margin-top: 5px;
+        opacity: 0.6;
+        text-align: center;
+        width: 100%;
+    }
+    .detail_row {
         background-color: #e58a22;
         margin-top: auto;
         margin-bottom: auto;
-        height: 5.4vh;
+        height: 4vh;
         opacity: 1;
         position: relative;
         z-index: 5;
         transition-duration: 0.6s;
         transition-timing-function: ease-in-out;
         border-radius: 2.7vh;
+    }
+    .detail_row .full_height {
+        position: absolute;
+        top: 0vh;
     }
     .graph_row {
         margin-top: 10%;
@@ -93,7 +119,7 @@ page-detail {
         position: relative;
     }
     .each_graph_row {
-        height: 9vh;
+        height: 7vh;
     }
     .first_row {
         background-color: #7f83a7;
@@ -107,16 +133,18 @@ page-detail {
         // width: 40px;
         // height: 40px;
         // border-radius: 40px;
-        max-height: 3.5vh !important;
-        min-height: 3.5vh !important;
-        max-width: 3.5vh !important;
-        min-width: 3.5vh !important;
-        border-radius: 50%;
-        position: absolute;
-        top: 0.6vh;
+        max-height: 3vh !important;
+        min-height: 3vh !important;
+        max-width: 3vh !important;
+        min-width: 3vh !important;
+        border-radius: 50%; // position: absolute;
+        // top: 0vh;
         right: -2.5vw;
         border: 2px solid white;
         max-width: unset;
+        margin-top: auto;
+        margin-bottom: auto; // float: right;
+        margin-left: auto;
     }
     .each_number_row {
         float: left;
@@ -165,8 +193,9 @@ page-detail {
     }
     .name_left {
         float: left;
-        padding-right: 5vw;
+        padding-right: 8vw;
         text-align: right;
+        margin-right: auto;
     }
     .blank_span {
         height: 15px;
@@ -174,17 +203,20 @@ page-detail {
     }
     .name_right {
         float: right;
-        margin-right: auto;
+        margin-left: auto;
         padding-left: 5vw;
     }
     .person_name {
         position: absolute;
-        top: 2.88vh;
+        top: 0;
+        height: 100%;
     }
     .person_name span {
-        font-size: 2.7vh;
+        font-size: 4vw;
+        margin-top: auto;
+        margin-bottom: auto;
         color: white;
-        z-index: 10;
+        z-index: 8;
     }
     .refresh_icon {
         width: 4vh;
@@ -203,11 +235,11 @@ page-detail {
         border-radius: 2px !important;
         height: 4vh !important;
         padding-top: 1vh !important;
-        font-size: 2vh;
+        font-size: 3.5vw;
     }
     .trend_span {
         color: white;
-        font-size: 2vh;
+        font-size: 3.5vw;
     }
     .photo_scroll {
         width: 100%;
@@ -230,6 +262,6 @@ page-detail {
         text-align: center;
         margin: auto;
         padding-top: 1.8vh;
-        font-size: 1.8vh;
+        font-size: 3.5vw;
     }
 }

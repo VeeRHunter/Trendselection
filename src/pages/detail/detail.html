@@ -45,14 +45,14 @@
 
 <ion-content padding>
 
-  <ion-row class="topic_photo_row">
+  <ion-row class="man_photo_row">
     <ion-slides scrollX="true" slidesPerView=5 class="photo_scroll">
-      <ion-slide class="topic_span" *ngFor="let list of topic_total; let i = index;">
+      <ion-slide class="photo_span" *ngFor="let list of topic_total; let i = index;">
         <ion-row [ngClass]="{'topic_content':!list.sel_state, 'topic_content_sel':list.sel_state}" (click)=" click_photo(i)">
           <img [ngClass]="{'select_image':!list.sel_state, 'unselect_image':list.sel_state}" src="{{list.topic_image}} " />
         </ion-row>
         <ion-row>
-          <span class="name_select">
+          <span class="text_center" [ngClass]="{'name_select':list.sel_state, 'name_avail':list.avail, 'name_none':!list.sel_state}">
             {{list.topic_name}}
           </span>
         </ion-row>
@@ -63,7 +63,9 @@
   <ion-row class="graph_row">
     <ion-row class="each_graph_row" [ngClass]="{'first_row':i % 2 == 0, 'second_row':i % 2 == 1}" *ngFor="let list of person_total; let i = index">
       <ion-row class="detail_row" [ngStyle]="{'width': list.width}">
-        <img src="{{list.man_image}}" class="man_image" alt="" (click)="goto_home(i)">
+        <ion-row class="full_height">
+          <img src="{{list.man_image}}" class="man_image" alt="" (click)="goto_home(i)">
+        </ion-row>
       </ion-row>
       <ion-row class="person_name">
         <span class="name_left" [ngStyle]="{'width': list.width}" *ngIf="list.value >= 55" alt="" (click)="goto_home(i)">{{list.person_name}}</span>
