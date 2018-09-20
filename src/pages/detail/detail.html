@@ -52,7 +52,7 @@
           <img [ngClass]="{'select_image':!list.sel_state, 'unselect_image':list.sel_state}" src="{{list.topic_image}} " />
         </ion-row>
         <ion-row>
-          <span class="text_center" [ngClass]="{'name_select':list.sel_state, 'name_avail':list.avail, 'name_none':!list.sel_state}">
+          <span class="text_center" (click)=" click_photo(i)" [ngClass]="{'name_select':list.sel_state, 'name_avail':list.avail, 'name_none':!list.sel_state}">
             {{list.topic_name}}
           </span>
         </ion-row>

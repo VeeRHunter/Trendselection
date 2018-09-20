@@ -20,21 +20,6 @@ page-home {
         cursor: pointer;
         text-align: center;
     }
-    .date_select {
-        margin: auto !important;
-        background-color: white !important;
-        padding-bottom: 0px !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        border-radius: 0px !important;
-        position: relative !important;
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-        border-radius: 2px !important;
-        height: 4vh !important;
-        padding-top: 1vh !important;
-        font-size: 3.5vw;
-    }
     .trend_span {
         color: white;
         font-size: 3.5vw;
@@ -47,10 +32,10 @@ page-home {
         position: relative;
     }
     .photo_img {
-        max-height: 15vw;
-        min-height: 15vw;
-        max-width: 15vw;
-        min-width: 15vw;
+        max-height: 10vw;
+        min-height: 10vw;
+        max-width: 10vw;
+        min-width: 10vw;
         border-radius: 50%;
         border: 2px solid white;
         transition-timing-function: ease-in-out;
@@ -67,33 +52,36 @@ page-home {
         top: -1px;
     }
     .non_borderImg {
-        max-height: 15vw;
-        min-height: 15vw;
-        max-width: 15vw;
-        min-width: 15vw;
+        max-height: 10vw;
+        min-height: 10vw;
+        max-width: 10vw;
+        min-width: 10vw;
         border-radius: 50%;
         opacity: 0.2;
         transition-timing-function: ease-in-out;
         margin: auto;
     }
     .avail_img {
-        max-height: 15vw;
-        min-height: 15vw;
-        max-width: 15vw;
-        min-width: 15vw;
+        max-height: 10vw;
+        min-height: 10vw;
+        max-width: 10vw;
+        min-width: 10vw;
         border-radius: 50%;
         opacity: 0.7;
         transition-timing-function: ease-in-out;
         margin: auto;
     }
     .graph_row {
-        margin-top: 10%;
+        margin-top: 3%;
         margin-left: -5px;
         margin-bottom: 35%;
         position: relative;
     }
     .each_graph_row {
         height: 7vh;
+        .full_height{
+            height: 7vh;
+        }
     }
     .first_row {
         background-color: #7f83a7;

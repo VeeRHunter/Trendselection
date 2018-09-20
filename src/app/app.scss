@@ -47,10 +47,6 @@ ion-header {
     text-align: center;
 }
 
-.date_select {
-    margin: auto;
-}
-
 .social_select {
     margin: auto;
 }
@@ -78,4 +74,20 @@ ion-row {
     height: 100%;
     top: 0px;
     left: 0px;
+}
+
+.date_select {
+    margin: auto !important;
+    background-color: white !important;
+    padding-bottom: 0px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 0px !important;
+    position: relative !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    border-radius: 2px !important;
+    height: 4vh !important;
+    padding-top: 1vh !important;
+    font-size: 3.2vw;
 }

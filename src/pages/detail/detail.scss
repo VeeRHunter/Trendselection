@@ -19,10 +19,10 @@ page-detail {
         // width: 50px;
         // height: 50px;
         // border-radius: 50px;
-        max-height: 15vw;
-        min-height: 15vw;
-        max-width: 15vw;
-        min-width: 15vw;
+        max-height: 10vw;
+        min-height: 10vw;
+        max-width: 10vw;
+        min-width: 10vw;
         border-radius: 50%;
         background: white;
         opacity: 0.5;
@@ -32,10 +32,10 @@ page-detail {
         // width: 50px;
         // height: 50px;
         // border-radius: 50px;
-        max-height: 15vw;
-        min-height: 15vw;
-        max-width: 15vw;
-        min-width: 15vw;
+        max-height: 10vw;
+        min-height: 10vw;
+        max-width: 10vw;
+        min-width: 10vw;
         border-radius: 50%;
         background: white;
         opacity: 1;
@@ -113,7 +113,7 @@ page-detail {
         top: 0vh;
     }
     .graph_row {
-        margin-top: 10%;
+        margin-top: 3%;
         margin-left: -5px;
         margin-bottom: 35%;
         position: relative;
@@ -133,10 +133,10 @@ page-detail {
         // width: 40px;
         // height: 40px;
         // border-radius: 40px;
-        max-height: 3vh !important;
-        min-height: 3vh !important;
-        max-width: 3vh !important;
-        min-width: 3vh !important;
+        max-height: 3.3vh !important;
+        min-height: 3.3vh !important;
+        max-width: 3.3vh !important;
+        min-width: 3.3vh !important;
         border-radius: 50%; // position: absolute;
         // top: 0vh;
         right: -2.5vw;
@@ -210,6 +210,7 @@ page-detail {
         position: absolute;
         top: 0;
         height: 100%;
+        left: 0;
     }
     .person_name span {
         font-size: 4vw;
@@ -221,21 +222,6 @@ page-detail {
     .refresh_icon {
         width: 4vh;
         margin: auto;
-    }
-    .date_select {
-        margin: auto !important;
-        background-color: white !important;
-        padding-bottom: 0px !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        border-radius: 0px !important;
-        position: relative !important;
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-        border-radius: 2px !important;
-        height: 4vh !important;
-        padding-top: 1vh !important;
-        font-size: 3.5vw;
     }
     .trend_span {
         color: white;
