@@ -48,8 +48,8 @@
             {{list.name}}
           </span>
         </ion-row>
-        <ion-row class="flag_row">
-          <img class="flag_img_class" (click)="click_photo(i)" src="{{list.flag_image}}" [ngClass]="{'topic_select':list.selected, 'topic_avail':list.avail, 'topic_unselect':list.unselect}" />
+        <ion-row class="flag_row" (click)="click_photo(i)">
+          <img class="flag_img_class" src="{{list.flag_image}}" [ngClass]="{'topic_select':list.selected, 'topic_avail':list.avail, 'topic_unselect':list.unselect}" />
         </ion-row>
       </ion-slide>
     </ion-slides>
